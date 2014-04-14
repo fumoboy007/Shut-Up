@@ -1,0 +1,10 @@
+PODS:
+  - EZAudio (0.0.4)
+
+DEPENDENCIES:
+  - EZAudio
+
+SPEC CHECKSUMS:
+  EZAudio: 34fd967e7e7ed14549fdfad25debf40c4d18a217
+
+COCOAPODS: 0.31.1

@@ -6,10 +6,8 @@
 //  Copyright (c) 2014 Darren Mo. All rights reserved.
 //
 
-#import <Cocoa/Cocoa.h>
+@import Cocoa;
 
 @interface STFUAppDelegate : NSObject <NSApplicationDelegate>
-
-@property (assign) IBOutlet NSWindow *window;
 
 @end
