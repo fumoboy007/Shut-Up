@@ -1,980 +1,509 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>2522FAFB6EE840CEAF4E9D5C</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>3E306EBCC9E6427F9664C02F</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libPods-Shut Up.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>5073EF911E4F4234B5688CD7</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3E306EBCC9E6427F9664C02F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>5E4D37DA317B4E43BC92C550</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>3E306EBCC9E6427F9664C02F</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>8EA182AFF3664EAEBD491AAA</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Pods-Shut Up-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>E6C9BD5D18FB7CA000C08866</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E6C9BD6F18FB7CA000C08866</string>
-				<string>E6C9BD8D18FB7CA100C08866</string>
-				<string>E6C9BD6718FB7CA000C08866</string>
-				<string>E7C14288A8E34D98A292F38D</string>
-				<string>5E4D37DA317B4E43BC92C550</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E6C9BD5E18FB7CA000C08866</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>CLASSPREFIX</key>
-				<string>STFU</string>
-				<key>LastUpgradeCheck</key>
-				<string>0510</string>
-				<key>ORGANIZATIONNAME</key>
-				<string>Darren Mo</string>
-				<key>TargetAttributes</key>
-				<dict>
-					<key>E6C9BD8618FB7CA100C08866</key>
-					<dict>
-						<key>TestTargetID</key>
-						<string>E6C9BD6518FB7CA000C08866</string>
-					</dict>
-				</dict>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>E6C9BD6118FB7CA000C08866</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-				<string>Base</string>
-			</array>
-			<key>mainGroup</key>
-			<string>E6C9BD5D18FB7CA000C08866</string>
-			<key>productRefGroup</key>
-			<string>E6C9BD6718FB7CA000C08866</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>E6C9BD6518FB7CA000C08866</string>
-				<string>E6C9BD8618FB7CA100C08866</string>
-			</array>
-		</dict>
-		<key>E6C9BD6118FB7CA000C08866</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>E6C9BD9518FB7CA100C08866</string>
-				<string>E6C9BD9618FB7CA100C08866</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>E6C9BD6218FB7CA000C08866</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>E6C9BD7D18FB7CA000C08866</string>
-				<string>E6C9BD7618FB7CA000C08866</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>E6C9BD6318FB7CA000C08866</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>5073EF911E4F4234B5688CD7</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>E6C9BD6418FB7CA000C08866</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>E6C9BD7418FB7CA000C08866</string>
-				<string>E6C9BD8218FB7CA000C08866</string>
-				<string>E6C9BD7A18FB7CA000C08866</string>
-				<string>E6C9BD8018FB7CA000C08866</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>E6C9BD6518FB7CA000C08866</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>E6C9BD9718FB7CA100C08866</string>
-			<key>buildPhases</key>
-			<array>
-				<string>2522FAFB6EE840CEAF4E9D5C</string>
-				<string>E6C9BD6218FB7CA000C08866</string>
-				<string>E6C9BD6318FB7CA000C08866</string>
-				<string>E6C9BD6418FB7CA000C08866</string>
-				<string>8EA182AFF3664EAEBD491AAA</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Shut Up</string>
-			<key>productName</key>
-			<string>Shut Up</string>
-			<key>productReference</key>
-			<string>E6C9BD6618FB7CA000C08866</string>
-			<key>productType</key>
-			<string>com.apple.product-type.application</string>
-		</dict>
-		<key>E6C9BD6618FB7CA000C08866</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.application</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Shut Up.app</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>E6C9BD6718FB7CA000C08866</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E6C9BD6618FB7CA000C08866</string>
-				<string>E6C9BD8718FB7CA100C08866</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E6C9BD6F18FB7CA000C08866</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E6C9BD7B18FB7CA000C08866</string>
-				<string>E6C9BD7C18FB7CA000C08866</string>
-				<string>E6C9BD7E18FB7CA000C08866</string>
-				<string>E6C9BD8118FB7CA000C08866</string>
-				<string>E6C9BD7018FB7CA000C08866</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Shut Up</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E6C9BD7018FB7CA000C08866</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E6C9BD7118FB7CA000C08866</string>
-				<string>E6C9BD7218FB7CA000C08866</string>
-				<string>E6C9BD7518FB7CA000C08866</string>
-				<string>E6C9BD7718FB7CA000C08866</string>
-				<string>E6C9BD7818FB7CA000C08866</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Supporting Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E6C9BD7118FB7CA000C08866</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Shut Up-Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E6C9BD7218FB7CA000C08866</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E6C9BD7318FB7CA000C08866</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E6C9BD7318FB7CA000C08866</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.strings</string>
-			<key>name</key>
-			<string>en</string>
-			<key>path</key>
-			<string>en.lproj/InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E6C9BD7418FB7CA000C08866</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E6C9BD7218FB7CA000C08866</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E6C9BD7518FB7CA000C08866</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>main.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E6C9BD7618FB7CA000C08866</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E6C9BD7518FB7CA000C08866</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E6C9BD7718FB7CA000C08866</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Shut Up-Prefix.pch</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E6C9BD7818FB7CA000C08866</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E6C9BD7918FB7CA000C08866</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>Credits.rtf</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E6C9BD7918FB7CA000C08866</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.rtf</string>
-			<key>name</key>
-			<string>en</string>
-			<key>path</key>
-			<string>en.lproj/Credits.rtf</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E6C9BD7A18FB7CA000C08866</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E6C9BD7818FB7CA000C08866</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E6C9BD7B18FB7CA000C08866</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>STFUAppDelegate.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E6C9BD7C18FB7CA000C08866</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>STFUAppDelegate.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E6C9BD7D18FB7CA000C08866</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E6C9BD7C18FB7CA000C08866</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E6C9BD7E18FB7CA000C08866</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E6C9BD7F18FB7CA000C08866</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>MainMenu.xib</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E6C9BD7F18FB7CA000C08866</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.xib</string>
-			<key>name</key>
-			<string>Base</string>
-			<key>path</key>
-			<string>Base.lproj/MainMenu.xib</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E6C9BD8018FB7CA000C08866</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E6C9BD7E18FB7CA000C08866</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E6C9BD8118FB7CA000C08866</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>folder.assetcatalog</string>
-			<key>path</key>
-			<string>Images.xcassets</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E6C9BD8218FB7CA000C08866</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E6C9BD8118FB7CA000C08866</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E6C9BD8318FB7CA100C08866</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>E6C9BD9418FB7CA100C08866</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>E6C9BD8418FB7CA100C08866</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>E6C9BD8518FB7CA100C08866</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>E6C9BD9218FB7CA100C08866</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>E6C9BD8618FB7CA100C08866</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>E6C9BD9A18FB7CA100C08866</string>
-			<key>buildPhases</key>
-			<array>
-				<string>E6C9BD8318FB7CA100C08866</string>
-				<string>E6C9BD8418FB7CA100C08866</string>
-				<string>E6C9BD8518FB7CA100C08866</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>E6C9BD8C18FB7CA100C08866</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Shut UpTests</string>
-			<key>productName</key>
-			<string>Shut UpTests</string>
-			<key>productReference</key>
-			<string>E6C9BD8718FB7CA100C08866</string>
-			<key>productType</key>
-			<string>com.apple.product-type.bundle.unit-test</string>
-		</dict>
-		<key>E6C9BD8718FB7CA100C08866</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.cfbundle</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Shut UpTests.xctest</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>E6C9BD8B18FB7CA100C08866</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>E6C9BD5E18FB7CA000C08866</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>E6C9BD6518FB7CA000C08866</string>
-			<key>remoteInfo</key>
-			<string>Shut Up</string>
-		</dict>
-		<key>E6C9BD8C18FB7CA100C08866</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>target</key>
-			<string>E6C9BD6518FB7CA000C08866</string>
-			<key>targetProxy</key>
-			<string>E6C9BD8B18FB7CA100C08866</string>
-		</dict>
-		<key>E6C9BD8D18FB7CA100C08866</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E6C9BD9318FB7CA100C08866</string>
-				<string>E6C9BD8E18FB7CA100C08866</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Shut UpTests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E6C9BD8E18FB7CA100C08866</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E6C9BD8F18FB7CA100C08866</string>
-				<string>E6C9BD9018FB7CA100C08866</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Supporting Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E6C9BD8F18FB7CA100C08866</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Shut UpTests-Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E6C9BD9018FB7CA100C08866</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E6C9BD9118FB7CA100C08866</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E6C9BD9118FB7CA100C08866</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.strings</string>
-			<key>name</key>
-			<string>en</string>
-			<key>path</key>
-			<string>en.lproj/InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E6C9BD9218FB7CA100C08866</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E6C9BD9018FB7CA100C08866</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E6C9BD9318FB7CA100C08866</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Shut_UpTests.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E6C9BD9418FB7CA100C08866</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E6C9BD9318FB7CA100C08866</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E6C9BD9518FB7CA100C08866</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_ENABLE_OBJC_EXCEPTIONS</key>
-				<string>YES</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>MACOSX_DEPLOYMENT_TARGET</key>
-				<string>10.8</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>SDKROOT</key>
-				<string>macosx</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>E6C9BD9618FB7CA100C08866</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf-with-dsym</string>
-				<key>ENABLE_NS_ASSERTIONS</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_ENABLE_OBJC_EXCEPTIONS</key>
-				<string>YES</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>MACOSX_DEPLOYMENT_TARGET</key>
-				<string>10.8</string>
-				<key>SDKROOT</key>
-				<string>macosx</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>E6C9BD9718FB7CA100C08866</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>E6C9BD9818FB7CA100C08866</string>
-				<string>E6C9BD9918FB7CA100C08866</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>E6C9BD9818FB7CA100C08866</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>E7C14288A8E34D98A292F38D</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>COMBINE_HIDPI_IMAGES</key>
-				<string>YES</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Shut Up/Shut Up-Prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Shut Up/Shut Up-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>app</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>E6C9BD9918FB7CA100C08866</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>E7C14288A8E34D98A292F38D</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>COMBINE_HIDPI_IMAGES</key>
-				<string>YES</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Shut Up/Shut Up-Prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Shut Up/Shut Up-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>app</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>E6C9BD9A18FB7CA100C08866</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>E6C9BD9B18FB7CA100C08866</string>
-				<string>E6C9BD9C18FB7CA100C08866</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>E6C9BD9B18FB7CA100C08866</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>BUNDLE_LOADER</key>
-				<string>$(BUILT_PRODUCTS_DIR)/Shut Up.app/Contents/MacOS/Shut Up</string>
-				<key>COMBINE_HIDPI_IMAGES</key>
-				<string>YES</string>
-				<key>FRAMEWORK_SEARCH_PATHS</key>
-				<array>
-					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Shut Up/Shut Up-Prefix.pch</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>INFOPLIST_FILE</key>
-				<string>Shut UpTests/Shut UpTests-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_HOST</key>
-				<string>$(BUNDLE_LOADER)</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>xctest</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>E6C9BD9C18FB7CA100C08866</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>BUNDLE_LOADER</key>
-				<string>$(BUILT_PRODUCTS_DIR)/Shut Up.app/Contents/MacOS/Shut Up</string>
-				<key>COMBINE_HIDPI_IMAGES</key>
-				<string>YES</string>
-				<key>FRAMEWORK_SEARCH_PATHS</key>
-				<array>
-					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Shut Up/Shut Up-Prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Shut UpTests/Shut UpTests-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_HOST</key>
-				<string>$(BUNDLE_LOADER)</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>xctest</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>E7C14288A8E34D98A292F38D</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-Shut Up.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Pods-Shut Up.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>E6C9BD5E18FB7CA000C08866</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5073EF911E4F4234B5688CD7 /* libPods-Shut Up.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E306EBCC9E6427F9664C02F /* libPods-Shut Up.a */; };
+		E6C9BD7418FB7CA000C08866 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E6C9BD7218FB7CA000C08866 /* InfoPlist.strings */; };
+		E6C9BD7618FB7CA000C08866 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C9BD7518FB7CA000C08866 /* main.m */; };
+		E6C9BD7A18FB7CA000C08866 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = E6C9BD7818FB7CA000C08866 /* Credits.rtf */; };
+		E6C9BD7D18FB7CA000C08866 /* STFUAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C9BD7C18FB7CA000C08866 /* STFUAppDelegate.m */; };
+		E6C9BD8018FB7CA000C08866 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6C9BD7E18FB7CA000C08866 /* MainMenu.xib */; };
+		E6C9BD8218FB7CA000C08866 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6C9BD8118FB7CA000C08866 /* Images.xcassets */; };
+		E6C9BD9218FB7CA100C08866 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E6C9BD9018FB7CA100C08866 /* InfoPlist.strings */; };
+		E6C9BD9418FB7CA100C08866 /* Shut_UpTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C9BD9318FB7CA100C08866 /* Shut_UpTests.m */; };
+		E6C9BD9F18FB81CD00C08866 /* STFUNoiseCanceller.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C9BD9E18FB81CD00C08866 /* STFUNoiseCanceller.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E6C9BD8B18FB7CA100C08866 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E6C9BD5E18FB7CA000C08866 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E6C9BD6518FB7CA000C08866;
+			remoteInfo = "Shut Up";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3E306EBCC9E6427F9664C02F /* libPods-Shut Up.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Shut Up.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6C9BD6618FB7CA000C08866 /* Shut Up.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Shut Up.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6C9BD7118FB7CA000C08866 /* Shut Up-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Shut Up-Info.plist"; sourceTree = "<group>"; };
+		E6C9BD7318FB7CA000C08866 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E6C9BD7518FB7CA000C08866 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E6C9BD7718FB7CA000C08866 /* Shut Up-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Shut Up-Prefix.pch"; sourceTree = "<group>"; };
+		E6C9BD7918FB7CA000C08866 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		E6C9BD7B18FB7CA000C08866 /* STFUAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STFUAppDelegate.h; sourceTree = "<group>"; };
+		E6C9BD7C18FB7CA000C08866 /* STFUAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STFUAppDelegate.m; sourceTree = "<group>"; };
+		E6C9BD7F18FB7CA000C08866 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		E6C9BD8118FB7CA000C08866 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E6C9BD8718FB7CA100C08866 /* Shut UpTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Shut UpTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6C9BD8F18FB7CA100C08866 /* Shut UpTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Shut UpTests-Info.plist"; sourceTree = "<group>"; };
+		E6C9BD9118FB7CA100C08866 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E6C9BD9318FB7CA100C08866 /* Shut_UpTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Shut_UpTests.m; sourceTree = "<group>"; };
+		E6C9BD9D18FB81CD00C08866 /* STFUNoiseCanceller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STFUNoiseCanceller.h; sourceTree = "<group>"; };
+		E6C9BD9E18FB81CD00C08866 /* STFUNoiseCanceller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STFUNoiseCanceller.m; sourceTree = "<group>"; };
+		E7C14288A8E34D98A292F38D /* Pods-Shut Up.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shut Up.xcconfig"; path = "Pods/Pods-Shut Up.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E6C9BD6318FB7CA000C08866 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5073EF911E4F4234B5688CD7 /* libPods-Shut Up.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6C9BD8418FB7CA100C08866 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5E4D37DA317B4E43BC92C550 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3E306EBCC9E6427F9664C02F /* libPods-Shut Up.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E6C9BD5D18FB7CA000C08866 = {
+			isa = PBXGroup;
+			children = (
+				E6C9BD6F18FB7CA000C08866 /* Shut Up */,
+				E6C9BD8D18FB7CA100C08866 /* Shut UpTests */,
+				E6C9BD6718FB7CA000C08866 /* Products */,
+				E7C14288A8E34D98A292F38D /* Pods-Shut Up.xcconfig */,
+				5E4D37DA317B4E43BC92C550 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E6C9BD6718FB7CA000C08866 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E6C9BD6618FB7CA000C08866 /* Shut Up.app */,
+				E6C9BD8718FB7CA100C08866 /* Shut UpTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E6C9BD6F18FB7CA000C08866 /* Shut Up */ = {
+			isa = PBXGroup;
+			children = (
+				E6C9BD7B18FB7CA000C08866 /* STFUAppDelegate.h */,
+				E6C9BD7C18FB7CA000C08866 /* STFUAppDelegate.m */,
+				E6C9BD9D18FB81CD00C08866 /* STFUNoiseCanceller.h */,
+				E6C9BD9E18FB81CD00C08866 /* STFUNoiseCanceller.m */,
+				E6C9BD7E18FB7CA000C08866 /* MainMenu.xib */,
+				E6C9BD8118FB7CA000C08866 /* Images.xcassets */,
+				E6C9BD7018FB7CA000C08866 /* Supporting Files */,
+			);
+			path = "Shut Up";
+			sourceTree = "<group>";
+		};
+		E6C9BD7018FB7CA000C08866 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E6C9BD7118FB7CA000C08866 /* Shut Up-Info.plist */,
+				E6C9BD7218FB7CA000C08866 /* InfoPlist.strings */,
+				E6C9BD7518FB7CA000C08866 /* main.m */,
+				E6C9BD7718FB7CA000C08866 /* Shut Up-Prefix.pch */,
+				E6C9BD7818FB7CA000C08866 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E6C9BD8D18FB7CA100C08866 /* Shut UpTests */ = {
+			isa = PBXGroup;
+			children = (
+				E6C9BD9318FB7CA100C08866 /* Shut_UpTests.m */,
+				E6C9BD8E18FB7CA100C08866 /* Supporting Files */,
+			);
+			path = "Shut UpTests";
+			sourceTree = "<group>";
+		};
+		E6C9BD8E18FB7CA100C08866 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E6C9BD8F18FB7CA100C08866 /* Shut UpTests-Info.plist */,
+				E6C9BD9018FB7CA100C08866 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E6C9BD6518FB7CA000C08866 /* Shut Up */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E6C9BD9718FB7CA100C08866 /* Build configuration list for PBXNativeTarget "Shut Up" */;
+			buildPhases = (
+				2522FAFB6EE840CEAF4E9D5C /* Check Pods Manifest.lock */,
+				E6C9BD6218FB7CA000C08866 /* Sources */,
+				E6C9BD6318FB7CA000C08866 /* Frameworks */,
+				E6C9BD6418FB7CA000C08866 /* Resources */,
+				8EA182AFF3664EAEBD491AAA /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Shut Up";
+			productName = "Shut Up";
+			productReference = E6C9BD6618FB7CA000C08866 /* Shut Up.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E6C9BD8618FB7CA100C08866 /* Shut UpTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E6C9BD9A18FB7CA100C08866 /* Build configuration list for PBXNativeTarget "Shut UpTests" */;
+			buildPhases = (
+				E6C9BD8318FB7CA100C08866 /* Sources */,
+				E6C9BD8418FB7CA100C08866 /* Frameworks */,
+				E6C9BD8518FB7CA100C08866 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E6C9BD8C18FB7CA100C08866 /* PBXTargetDependency */,
+			);
+			name = "Shut UpTests";
+			productName = "Shut UpTests";
+			productReference = E6C9BD8718FB7CA100C08866 /* Shut UpTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E6C9BD5E18FB7CA000C08866 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = STFU;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Darren Mo";
+				TargetAttributes = {
+					E6C9BD8618FB7CA100C08866 = {
+						TestTargetID = E6C9BD6518FB7CA000C08866;
+					};
+				};
+			};
+			buildConfigurationList = E6C9BD6118FB7CA000C08866 /* Build configuration list for PBXProject "Shut Up" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E6C9BD5D18FB7CA000C08866;
+			productRefGroup = E6C9BD6718FB7CA000C08866 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E6C9BD6518FB7CA000C08866 /* Shut Up */,
+				E6C9BD8618FB7CA100C08866 /* Shut UpTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E6C9BD6418FB7CA000C08866 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6C9BD7418FB7CA000C08866 /* InfoPlist.strings in Resources */,
+				E6C9BD8218FB7CA000C08866 /* Images.xcassets in Resources */,
+				E6C9BD7A18FB7CA000C08866 /* Credits.rtf in Resources */,
+				E6C9BD8018FB7CA000C08866 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6C9BD8518FB7CA100C08866 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6C9BD9218FB7CA100C08866 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2522FAFB6EE840CEAF4E9D5C /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8EA182AFF3664EAEBD491AAA /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-Shut Up-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E6C9BD6218FB7CA000C08866 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6C9BD7D18FB7CA000C08866 /* STFUAppDelegate.m in Sources */,
+				E6C9BD9F18FB81CD00C08866 /* STFUNoiseCanceller.m in Sources */,
+				E6C9BD7618FB7CA000C08866 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6C9BD8318FB7CA100C08866 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6C9BD9418FB7CA100C08866 /* Shut_UpTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E6C9BD8C18FB7CA100C08866 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E6C9BD6518FB7CA000C08866 /* Shut Up */;
+			targetProxy = E6C9BD8B18FB7CA100C08866 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E6C9BD7218FB7CA000C08866 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E6C9BD7318FB7CA000C08866 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E6C9BD7818FB7CA000C08866 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E6C9BD7918FB7CA000C08866 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		E6C9BD7E18FB7CA000C08866 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E6C9BD7F18FB7CA000C08866 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		E6C9BD9018FB7CA100C08866 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E6C9BD9118FB7CA100C08866 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E6C9BD9518FB7CA100C08866 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		E6C9BD9618FB7CA100C08866 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		E6C9BD9818FB7CA100C08866 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7C14288A8E34D98A292F38D /* Pods-Shut Up.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Shut Up/Shut Up-Prefix.pch";
+				INFOPLIST_FILE = "Shut Up/Shut Up-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E6C9BD9918FB7CA100C08866 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7C14288A8E34D98A292F38D /* Pods-Shut Up.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Shut Up/Shut Up-Prefix.pch";
+				INFOPLIST_FILE = "Shut Up/Shut Up-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		E6C9BD9B18FB7CA100C08866 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Shut Up.app/Contents/MacOS/Shut Up";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Shut Up/Shut Up-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Shut UpTests/Shut UpTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		E6C9BD9C18FB7CA100C08866 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Shut Up.app/Contents/MacOS/Shut Up";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Shut Up/Shut Up-Prefix.pch";
+				INFOPLIST_FILE = "Shut UpTests/Shut UpTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E6C9BD6118FB7CA000C08866 /* Build configuration list for PBXProject "Shut Up" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6C9BD9518FB7CA100C08866 /* Debug */,
+				E6C9BD9618FB7CA100C08866 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E6C9BD9718FB7CA100C08866 /* Build configuration list for PBXNativeTarget "Shut Up" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6C9BD9818FB7CA100C08866 /* Debug */,
+				E6C9BD9918FB7CA100C08866 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E6C9BD9A18FB7CA100C08866 /* Build configuration list for PBXNativeTarget "Shut UpTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6C9BD9B18FB7CA100C08866 /* Debug */,
+				E6C9BD9C18FB7CA100C08866 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E6C9BD5E18FB7CA000C08866 /* Project object */;
+}

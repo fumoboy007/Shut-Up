@@ -7,12 +7,15 @@
 //
 
 #import "STFUAppDelegate.h"
+#import "STFUNoiseCanceller.h"
 
 @interface STFUAppDelegate ()
 
 @property (strong, nonatomic) NSStatusItem *statusItem;
 @property (strong, nonatomic) NSMenu *statusMenu;
 @property (strong, nonatomic) NSMenuItem *quitMenuItem;
+
+@property (strong, nonatomic) STFUNoiseCanceller *noiseCanceller;
 
 @end
 
@@ -28,6 +31,9 @@
 	[self.statusItem setTitle:@"STFU"];
 	[self.statusItem setHighlightMode:YES];
 	[self.statusItem setMenu:self.statusMenu];
+	
+	self.noiseCanceller = [[STFUNoiseCanceller alloc] init];
+	[self.noiseCanceller startCancellingNoise];
 }
 
 - (void)quit:(id)sender {
